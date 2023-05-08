@@ -3,5 +3,77 @@
 @tailwind utilities;
 
 h1 {
-    @apply font-bold;
+    @apply font-bold text-2xl;
+}
+
+h2 {
+    @apply font-semibold text-xl border-b py-2;
+}
+
+h3 {
+    @apply font-semibold text-lg;
+}
+
+hr {
+    @apply py-2;
+}
+
+p {
+    @apply my-4;
+}
+
+ul {
+    @apply list-disc ml-8;
+}
+
+ol {
+    @apply list-decimal ml-8;
+}
+
+blockquote {
+    @apply bg-gray-100 px-4 py-2 border-l-2 border-gray-200;
+}
+
+code {
+    @apply bg-gray-100;
+}
+
+pre code {
+    @apply block p-4;
+}
+
+table {
+ @apply border my-4;
+}
+
+table thead {
+    @apply border-b;
+}
+
+table thead tr {
+    @apply divide-x;
+}
+
+table thead tr th {
+    @apply min-w-[8rem] p-2;
+}
+
+table tbody {
+    @apply divide-y;
+}
+
+table tbody tr {
+    @apply divide-x min-w-[8rem];
+}
+
+table tbody tr td {
+    @apply p-2;
+}
+
+#contents:not([data-slug="index"]) a {
+    @apply underline hover:no-underline text-blue-800;
+}
+
+#contents:not([data-slug="index"]) h1 {
+    @apply border-b py-2;
 }
